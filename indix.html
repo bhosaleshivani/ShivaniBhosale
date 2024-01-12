@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2f1c2be2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>Hi, I' m <span>Shivani </span><br>Bhosale From Thane</h1>
+        </div>
+    </div>
+  </div>
+  <!-- ------about----- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi, I'm Shivani Bhosale. As a fresh graduate, I have recently completed my bachelor's degree in Computer Engineering.
+            I am a dedicated and enthusiastic frontend developer
+             with a strong passion for web technologies. 
+            I specialize in creating visually appealing and
+             responsive websites using HTML, CSS, and JavaScript.
+             In addition to my technical skills, I am proficient in problem-solving, 
+             effective communication, and I take pride in delivering high-quality work on time.
+             As a frontend developer, my ultimate goal is to become an expert in frontend development, 
+             consistently learn and apply the latest trends, and contribute to the success of my clients and team members.</p>
+             <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('internship')">Internships</p>
+             </div>
+             <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Front-End Developmant</span><br>Designing and building the graphical user interface(GUI)</li>
+                <li><span>UI/UX</span><br>Designing Responsive Web Interfaces</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="education">
+              <ul>
+                
+                <li><span>2023</span><br><span>Bachlor's Degree in Computer Engineering</span><br>MGM's College of Engineering and Technology Passed with CGPA 7.81</li>
+                <li><span>2017-2020</span><br><span>Diploma in Computer Engineering</span><br>Dr.D.Y.Patil Polytechnic Passed with 86.40%</li>
+                <li><span>2016-2017</span><br><span>SSC</span><br>AAdarsh Vikas Bal Vidya Mandir Passed with CGPA 74.20%</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="internship">
+              <ul>
+                <li><span>Deserve Services, Thane</span><br>Duration: 6weeks<br>Mode: Offline</li>
+                <li><span>TechnoHacks Edutech</span><br>Duration: 4weeks<br>Mode: Online</li>
+              </ul>
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---Services----- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title"> My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Designing</h2>
+          <p>Web designing services, as a fresher, it involve tasks such as HTML, CSS, 
+            JavaScript coding, web content creation, user interface design, search engine optimization, and website hosting and maintenance.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fas fa-crop"></i>
+          <h2>UI/UX Designing</h2>
+          <p>Develop a visually appealing and engaging website. Create a website that looks and functions well on various devices and screen sizes.
+            Ensure the website works correctly and looks great in different browsers. Build a user-friendly website that allows clients to easily add, edit, or delete content.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ------------portfolio----------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Restaurant Website</h3>
+            <p>This website finds you to learn more about is the exact menu options, 
+              a comprehensive dining experience, or an authentic flavor of a cuisine.</p>
+              <a href="assets\foodie\index.html"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Camping Website</h3>
+            <p>A camping blogging website serves as a one-stop-shop for travel enthusiasts, to discover top-quality 
+              camping gear for unforgettable outdoor advebtures. Gear up and make lasting memories.</p>
+              <a href="\assets\Custom Website HTML and CSS\index.html"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Consultant Website</h3>
+            <p>This is ramdon website I made to learn the HTML, CSS </p>
+              <a href="#"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+<!-- 
+------------contact------------------ -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>shivanibhosale237@gmail.com</p>
+        <p><i class="fas fa-phone"></i>7400305954</p>
+        <div class="social-icons">
+          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+          
+        </div>
+        <a href="images/my-CV.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg" ></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2023 <i class="fas fa-heart"></i> Shivani Bhosale</p>
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
